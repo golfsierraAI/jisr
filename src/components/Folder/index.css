@@ -5,7 +5,8 @@
 }
 
 .file {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   margin: 10px 0 0 40px;
   padding: 0;
 }
@@ -15,4 +16,9 @@
   width: 200px;
   display: inline-block;
   cursor: pointer;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
 }

@@ -2,6 +2,8 @@ import React from "react";
 import "./index.css";
 import { useState } from "react";
 import PopUp from "../PopUp/index.tsx";
+import file from "../../assets/file.svg";
+import folder from "../../assets/folder.svg";
 
 function Folder({ root }) {
   const [expand, setExpand] = useState(false);
@@ -18,7 +20,9 @@ function Folder({ root }) {
     return (
       <div>
         <div onClick={() => setExpand(!expand)} className="folder">
-          <span>📁 {root.name}</span>
+          <span>
+            <img className="icon" src={folder} alt="Folder icon" /> {root.name}
+          </span>
         </div>
 
         <div style={{ display: expand ? "block" : "none", paddingLeft: 25 }}>
@@ -32,7 +36,7 @@ function Folder({ root }) {
     return (
       <div className="popup_wrapper">
         <span className="file" onContextMenu={handlePopUp}>
-          📄 {root.name}
+          <img className="icon" src={file} alt="File icon" /> {root.name}
         </span>
         <PopUp showPopUp={showPopUp} fileName={root.name} />
       </div>
