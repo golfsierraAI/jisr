@@ -1,5 +1,6 @@
 .folder {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   margin: 20px 0 0 20px;
   cursor: pointer;
 }

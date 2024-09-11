@@ -19,8 +19,8 @@ function Folder({ root }) {
   if (root.type === "folder") {
     return (
       <div>
-        <div onClick={() => setExpand(!expand)} className="folder">
-          <span>
+        <div onClick={() => setExpand(!expand)}>
+          <span className="folder">
             <img className="icon" src={folder} alt="Folder icon" /> {root.name}
           </span>
         </div>
