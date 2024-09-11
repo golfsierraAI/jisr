@@ -1,0 +1,13 @@
+.main_wrapper {
+  padding: 10px;
+  background: #e9edc9;
+  position: absolute;
+  left: 150px;
+  top: 10px;
+}
+
+.button {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
