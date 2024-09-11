@@ -5,7 +5,7 @@ import React from "react";
 export default function App() {
   return (
     <div className="App">
-      <Folder files={files} />
+      <Folder root={files} />
     </div>
   );
 }
